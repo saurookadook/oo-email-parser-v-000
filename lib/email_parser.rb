@@ -19,8 +19,6 @@ class EmailParser
       # binding.pry
       if (array_element != "" && !(@@all.include?(array_element)))
         @@all << array_element
-      elsif @@all.include?(array_element)
-        @@all.delete(array_element)
       end
     end
     @@all
