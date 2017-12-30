@@ -8,7 +8,7 @@ class EmailParser
   # @@all = []
 
   def self.parse
-    new_emails = self.new(emails)
+    new_emails = self.new
   end
 
 end
