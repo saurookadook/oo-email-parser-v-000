@@ -6,7 +6,7 @@ require 'pry'
 
 class EmailParser
   attr_accessor :emails
-  @@all = []
+  @all = []
 
   def initialize(emails)
     @emails = emails
@@ -18,10 +18,10 @@ class EmailParser
     parsed_emails.uniq.each do |array_element|
       # binding.pry
       if (array_element != "" && !(@@all.include?(array_element)))
-        @@all << array_element
+        @all << array_element
       end
     end
-    @@all
+    @all
   end
 
 end
