@@ -19,6 +19,7 @@ class EmailParser
       binding.pry
       @@all << array_element if (array_element != "" && !(@@all.include?(array_element)))
     end
+    @@all
   end
 
 end
