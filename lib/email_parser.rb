@@ -15,6 +15,7 @@ class EmailParser
 
   def parse
     parsed_emails = @emails.split(/\,|\s/)
+    binding.pry
     parsed_emails.uniq.each do |array_element|
       # binding.pry
       if (array_element != "" && !(@@all.include?(array_element)))
