@@ -14,8 +14,8 @@ class EmailParser
   end
 
   def parse
-    parsed_emails = @emails.split(/\,|\,\s|\s/)
-    @@all << parsed_emails.delete("")
+    parsed_emails = @emails.split(/\,|(\,\s)|\s/).delete("")
+    @@all << parsed_emails
     binding.pry
   end
 
