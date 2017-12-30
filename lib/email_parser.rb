@@ -17,7 +17,11 @@ class EmailParser
     parsed_emails = @emails.split(/\,|\s/)
     parsed_emails.uniq.each do |array_element|
       # binding.pry
-      @@all << array_element if (array_element != "" && !(@@all.include?(array_element)))
+      if array_element != ""
+        @@all << array_element
+      elsif @@all.include?(array_element)
+        @@all.delete(array_element)
+      end
     end
     @@all
   end
