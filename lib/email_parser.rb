@@ -5,10 +5,11 @@ require 'pry'
 # or whitespace (' ').
 
 class EmailParser
-  # @@all = []
+  @@all = []
 
-  def initialize(emails)
-
+  def initialize
+    self
+    @@all << self
   end
 
   def self.parse
