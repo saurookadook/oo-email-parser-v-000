@@ -5,7 +5,7 @@ require 'pry'
 # or whitespace (' ').
 
 class EmailParser
-  @@all = []
+  # @@all = []
 
   def self.parse
     binding.pry
