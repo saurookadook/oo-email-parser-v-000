@@ -15,7 +15,9 @@ class EmailParser
 
   def parse
     parsed_emails = @emails.split(/\,|(\,\s)|\s/)
-    @@all << parsed_emails.select{|element| element != ""}
+    parsed_emails.each do |array_element|
+      @@all << array_element if array_element != ""
+    end
   end
 
 end
