@@ -7,7 +7,8 @@ require 'pry'
 class EmailParser
   # @@all = []
 
-  def self.parse(emails)
+  def self.parse
+    new_emails = self.new(emails)
   end
 
 end
