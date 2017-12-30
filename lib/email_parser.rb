@@ -8,13 +8,13 @@ class EmailParser
   @@all = []
 
   def initialize(emails)
-    binding.pry
+    # binding.pry
     self
     @@all << self
   end
 
   def parse
-    
+
   end
 
 end
