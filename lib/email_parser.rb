@@ -4,10 +4,10 @@ require 'pry'
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-class EmailParser
+class EmailParser(emails)
   # @@all = []
 
-  def self.parse(emails)
+  def self.parse
     binding.pry
     # new_emails = self.new(emails)
 
