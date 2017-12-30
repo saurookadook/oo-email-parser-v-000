@@ -15,7 +15,7 @@ class EmailParser
 
   def parse
     parsed_emails = @emails.split(/\,|(\,\s)|\s/)
-    binding.pry
+    @@all << parsed_emails.select{|element| element != ""}
   end
 
 end
